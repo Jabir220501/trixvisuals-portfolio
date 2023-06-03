@@ -113,35 +113,49 @@ body {
 
 /* nav */
 header {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-right: 25px;
-    margin-left: 25px;
+    top: clamp(1.875rem, 1.5375rem + 1.6875vw, 3.5625rem);
+    right: clamp(1.0625rem, -0.0125rem + 5.375vw, 6.4375rem);
+    left: clamp(1.0625rem, -0.0125rem + 5.375vw, 6.4375rem);
 }
 
-header h2 {
-    font-size: 9px;
+header a {
+    z-index: 2;
+}
+
+header a #logo {
+    font-size: clamp(0.5625rem, -0.6125rem + 5.875vw, 6.4375rem);
     font-weight: 700;
     color: var(--white);
 }
 
-header #category {
-    font-size: 8px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-/* hamburger */
-header #menu_btn {
-    display: none;
-    font-size: 9px;
-    font-weight: 700;
+header #category h3{
+    font-size: clamp(0.5rem, 0.35rem + 0.75vw, 1.25rem);
+    font-weight: 400;
     text-transform: uppercase;
 }
 
-header .hamburger_closed {
+/* hamburger */
+
+#menu {
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    z-index: 2;
+}
+
+header #menu_btn {
+    display: none;
+    font-size: clamp(0.5rem, 0.375rem + 0.625vw, 1.125rem);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+header #hamburger_closed {
+    z-index: 2;
 }
 
 header .hamburger_menu {
@@ -154,24 +168,35 @@ header .hamburger_menu:first-child {
     margin-bottom: 5px;
 }
 
-header #hamburger_open {
+header #menu_closed {
+    display: none;
+}
+
+header #menu_open {
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--bg-color);
+    top: -40px;
+    left: -25px;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
+    z-index: 1;
+    background-color: #1b1b1b;
 }
 
-header #hamburger_open ul {}
+header #menu_open ul li a {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header #menu_open ul li {
+    margin-bottom: 55px;
+}
 
 @media only screen and (min-width: 560px) {
-    header h2 {
+    header a #logo {
         font-size: 15px;
     }
 

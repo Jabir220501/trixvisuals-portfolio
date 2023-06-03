@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Redirect requests for .php files to extensionless URLs
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Redirect requests for .html or .htm files to extensionless URLs
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME}.htm -f
+RewriteRule ^([^\.]+)$ $1.htm [NC,L]

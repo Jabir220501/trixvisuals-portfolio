@@ -1,3 +1,3 @@
 <a href="./">
-    <h2>TBT</h2>
+    <h2 id="logo">TRIX</h2>
 </a>
