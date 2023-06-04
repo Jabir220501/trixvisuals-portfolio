@@ -19,7 +19,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
+    <style>
+        .main_content {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
 
+        .splide__slide img {
+            width: 550px;
+            height: 400px;
+            border-radius: clamp(0.3125rem, 0.1875rem + 0.625vw, 0.9375rem);
+            object-fit: cover;
+            margin-right: 16px;
+        }
+    </style>
 
 </head>
 
