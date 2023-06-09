@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/css/photography.css">
 
     <script src="./src/js/index.js" defer></script>
+    <script src="./src/js/photo-grid.js" defer></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>

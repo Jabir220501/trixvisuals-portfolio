@@ -1,14 +1,14 @@
 body{
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 body::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 .slider-wrapper {
     display: flex;
     justify-content: space-between;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .section-image img {

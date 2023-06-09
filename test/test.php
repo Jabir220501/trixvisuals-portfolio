@@ -37,6 +37,9 @@
             object-fit: cover;
             margin-right: 16px;
         }
+        .splide__slide{
+            width: 50% !important;
+        }
     </style>
 
 </head>
